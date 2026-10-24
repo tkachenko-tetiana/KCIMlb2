@@ -114,7 +114,7 @@ set-default-shape turtles "person"
 
 ![Скріншот моделі в процесі симуляції](example-model.png)
  
-Фінальний код моделі та її інтерфейс доступні за [посиланням](Fire Simple Extension 2.nlogox)
+Фінальний код моделі та її інтерфейс доступні за [посиланням](Fire-Simple-Extension-2.nlogox)
 <br>
 
 ## Обчислювальні експерименти

@@ -36,13 +36,13 @@ end
 <pre>
 to move-firefighter
   let target patch-ahead 1
-  let can-go? false
+  let can-go false
   ;; чи можна йти вперед (ділянка не згоріла і вільна)
   if target != nobody [
-    set can-go? ([ pcolor = green or pcolor = black ] of target) and not any? turtles-on target
+    set can-go ([ pcolor = green or pcolor = black ] of target) and not any? turtles-on target
   ]
   ;; вибір нового напрямку серед вільних сусідів
-  if (not can-go?) or (random 100 < 20) [
+  if (not can-go) or (random 100 < 20) [
     set target one-of neighbors4 with [
       (pcolor = green or pcolor = black) and not any? turtles-here
     ]
